@@ -1,0 +1,24 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 14px;
+}
+body {
+  background-color:  rgb(211, 176, 136);
+}
+.jumbotron {
+  background: url(./assets/gradient.jpg) center bottom;
+  background-size: cover;
+  height: vh;
+  margin-bottom: auto;
+  color: white;
+}
+
+.container {
+  margin: auto;
+}
+.row {
+  margin-left: 22px;
+}
