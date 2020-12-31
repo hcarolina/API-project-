@@ -1,10 +1,10 @@
 let baseURL =  'https://ghibliapi.herokuapp.com';
-let url= 'https://ghibliapi.herokuapp.com/films';
+// let url ='https://ghibliapi.herokuapp.com/films';
 
 
 const section = document.querySelector('.row');
 
-fetch(url)
+fetch(`${baseURL}/films`)
 .then(function (result) { 
   console.log(result) 
   return result.json(); 
@@ -13,6 +13,7 @@ fetch(url)
   console.log(json); 
   displayResults(json);
 })
+.catch((err) => console.log(err));
 
 // creating a function to display our json data
 function displayResults(json) {
